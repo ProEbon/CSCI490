@@ -10,6 +10,8 @@ public class User {
 	
 	private String lastName;
 	
+	private String password;
+	
 	private int graduationYear;
 	
 	private int stickerID;
@@ -21,11 +23,12 @@ public class User {
 		stickerType = null;
 		firstName = null;
 		lastName = null;
+		password = null;
 		graduationYear = 0;
 		stickerID = 0;
 	}
 	
-	public User(int ID, String uName, String sType, String fName, String lName, int gYear, int sID){
+	public User(int ID, String uName, String sType, String fName, String lName, String aPassword, int gYear, int sID){
 		CCUID = ID;
 		userName = uName;
 		stickerType = sType;
@@ -33,6 +36,7 @@ public class User {
 		lastName = lName;
 		graduationYear = gYear;
 		stickerID = sID;
+		password = aPassword;
 	}
 	
 	public int getCCUID(){
