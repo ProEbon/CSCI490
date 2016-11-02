@@ -14,6 +14,17 @@ public class User {
 	
 	private int stickerID;
 	
+	/* default constructor*/
+	public User(){
+		CCUID = 0;
+		userName = null;
+		stickerType = null;
+		firstName = null;
+		lastName = null;
+		graduationYear = 0;
+		stickerID = 0;
+	}
+	
 	public User(int ID, String uName, String sType, String fName, String lName, int gYear, int sID){
 		CCUID = ID;
 		userName = uName;
