@@ -63,6 +63,7 @@ CREATE TABLE `user` (
   `stickerId` int(5) NOT NULL,
   `stickerType` char(10) NOT NULL,
   `preferedLotId` char(10) DEFAULT NULL,
+  `password` char(50) NOT NULL,
   PRIMARY KEY (`ccuId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -73,7 +74,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('Ebon','Moore-Martin','ebmoorem',1034638,2018,1,'Commuter',NULL);
+INSERT INTO `user` VALUES ('Ebon','Moore-Martin','ebmoorem',1034638,2018,1,'Commuter',NULL,'');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -86,4 +87,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-02 21:06:18
+-- Dump completed on 2016-11-02 21:15:39
