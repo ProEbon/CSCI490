@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>CCU Parking</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<style>
+#main { background: url("images/wood.jpg") no-repeat; background-size: 100% 100%;}
+.dropdown {
+    position: relative;
+    display: inline-block;
+	background-color: #009090;
+	padding: 4px 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AAAAAA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#best {
+	background-color: #888822;
+	padding: 4px 4px;
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	left: 4px
+}
+</style>
+
+<body>
+<div id="page"> 
+    <div id="header">
+		<table>
+			<tr>
+				<th><img src="images/cculogo.jpg" style="width: 142px; height: 40px;"></th>
+				<th><div class="title"><i>Parking Finder</i></div></th>
+			</tr>
+		</table>
+    </div>
+    <div id="bar">
+        <ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="lots.html">Lots</a></li>
+			  <li><a href="log.html">Login</a></li>
+		</ul>
+    </div>
+    <div id="pageContent">
+    
+    <div class="mainTitle">Home</div>
+        
+        
+    <div class="mainContent">
+		<div id="main">
+			<div class="dropdown">
+			<span>Any alerts today?</span>
+				<div class="dropdown-content">
+					<p>Nothing today!</p>
+				</div>
+			</div>
+			<div id="best">
+				<b>BEST PARKING FOR ME:</b><p><em>Input your information!</em></p>
+			</div>
+		</div>
+	</div>
+
+
+    </div>
+<div id="footer">CSCI 490 - James, Ryan, Dakota, Ebon, Sean</div> 
+</div>
+   
+        
+</body>
+</html>
