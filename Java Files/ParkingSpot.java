@@ -1,6 +1,8 @@
+package com.cs490;
+
 public class ParkingSpot {
 	
-	private int parkingLotID;
+	private String parkingLotID;
 	
 	private String parkingSpotID;
 	
@@ -16,18 +18,18 @@ public class ParkingSpot {
 	
 	private boolean overTime;
 	
-	public ParkingSpot(int lID, String pID, String sType, int tLimit){
-		parkingLotID = lID;
-		parkingSpotID = pID;
+	public ParkingSpot(String lId, String sId, String sType, int tLimit){
+		setParkingLotID(lId);
+		setParkingSpotID(sId);
 		occupied = false;
 		occupiedBy = 0;
-		spaceType = sType;
+		setSpaceType(sType);
 		//Some timer imitialization here
-		spotTimeLimit = tLimit;
+		setSpotTimeLimit(tLimit);
 		overTime = false;
 	}
 	
-	public int getParkingLotID(){
+	public String getParkingLotID(){
 		return parkingLotID;
 	}
 	
@@ -57,15 +59,61 @@ public class ParkingSpot {
 		return overTime;
 	}
 	
+	private void setParkingLotID(String id){
+		if(id != null){
+			parkingLotID = id;
+		}
+		else
+		{
+			System.out.println("Please enter valid id");
+			parkingLotId = "No ID yet";
+		}
+	}
+	
+	private void setParkingSpotID(String id){
+		if(id != null){
+			parkingSpotID = id;
+		}
+		else
+		{
+			System.out.println("Please enter valid id");
+			parkingSpotId = "No ID yet";
+		}
+	}	
+	
 	public void setOccupied(boolean val){
 		occupied = val;
 	}
 	
 	public void setOccupiedBy(int uID){
-		occupiedBy = uID;
+		if(uID < 0)
+		{
+			System.out.println("Please enter a valid ID");
+			occupiedBy = 0;
+		}
+		else
+		{
+			occupiedBy = uID;
+		}
+	}
+	
+	private void setSpaceType(String type){
+		spaceType = type;
 	}
 	
 	public void setSpotTimeLimit(int timeMax){
-		spotTimeLimit = timeMax;
+		if(timeMax < 0)
+		{
+			System.out.println("Please enter a valid time");
+			spotTimeLimit = 0;
+		}
+		else
+		{
+			spotTimeLimit = timeMax;
+		}
+	}
+	
+	public void setOverTime(boolean val){
+		overTime = val;
 	}
 }
