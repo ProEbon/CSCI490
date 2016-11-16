@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>"CCU Parking App"</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(document).ready( function() {
+      alert("running script");
+      $("#btnAllSpots").click(function() {
+      alert("clicked");
+      var inputId=document.getElementById("t_lotId").value ;
+      var theUrl =
+      "http://localhost:8080/webserv1/resources/ws2/parkingSpots/"+inputId ;
+      $.ajax( {
+      url: theUrl,
+      type: "GET",
+      dataType: "text",
+      success: function(result) {
+      alert("success");
+      var spotArray = JSON.parse(result);
+      alert(spotArray);
+      var output="<h3>Parking Spots in " + inputId +"</h3>";
+      for(var i=0; i<spotArray.length;i++)
+      {
+      output += "<p>" + spotArray[i].parkingLotID + " "+ spotArray[i].parkingSpotID + " Space Type: " + spotArray[i].spaceType + " occupied: " + spotArray[i].occupied + " " + "</p>";
+      }
+      alert(output);
+      $("#p_retrieveAllSpots").html(output); },
+      error:function(xhr) {
+      alert("error");
+      $("#p_retrieveAllSpots").html("Error:"+xhr.status+ ""+xhr.statusText);}
+      } );
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <h3>CCU Parking App</h3>
+    <div id="retrieveAllSpots">
+      <input type="text" id="t_lotId" value="type lot id here" />
+      <button id="btnAllSpots">Click to Retrieve by Lot Id</button>
+      <p id="p_retrieveAllSpots">List of Parking Spots Go Here</p>
+    </div>
+  </body>
+</html>
