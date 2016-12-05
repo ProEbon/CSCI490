@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>CCU Parking</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" language="JavaScript">
+                  function clickKimbel()
+            {
+
+                window.location = 'lotKimbel.html'
+
+            }
+             </script>
+</head>
+<style>
+#main { background: url("images/wood.jpg") no-repeat; background-size: 100% 100%;}
+.button {
+    background-color: #009191;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width: 240px;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+}
+</style>
+<body>
+<div id="page"> 
+    <div id="header">
+		<table>
+			<tr>
+				<th><img src="images/cculogo.jpg" style="width: 142px; height: 40px; border-radius: 12px;"></th>
+				<th><div class="title"><i>Parking Finder</i></div></th>
+			</tr>
+		</table>
+    </div>
+    <div id="bar">
+        <ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="lots.html">Lots</a></li>
+			  <li><a href="log.html">Login</a></li>
+		</ul>
+    </div>
+    <div id="pageContent">
+    
+    <div class="mainTitle">Lots</div>
+        
+        
+    <div class="mainContent">
+		<div id="main">
+			<div style="padding: 10px 10px 10px 10px;">
+				<button class="button button1" onclick="clickKimbel()">Kimbel</button>
+				<button class="button button1">Lot GG</button>
+				<button class="button button1">Extended</button>
+			</div>
+		</div>
+	</div>
+
+
+    </div>
+    <div id="footer">CSCI 490 - James, Ryan, Dakota, Ebon, Sean</div>
+</div>
+
+        
+</body>
+</html>

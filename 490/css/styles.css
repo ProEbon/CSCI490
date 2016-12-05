@@ -1,0 +1,148 @@
+html, body {
+	text-align: center;
+}
+p {
+	text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #008080;
+	background-color:#666666;
+}
+* {
+	margin: 0 auto 0 auto;
+	text-align:left;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+	background-image: url("images/bar-bg.jpg");
+	width: 280px;
+}
+
+li {
+    float: left;
+	width: 93px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+ 
+table {
+    border-collapse: collapse;
+	width: 100%;
+}
+
+table, td, th {
+    border-style: 2px solid;
+	border-color: #DDDDDD;
+}
+
+h6 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#header {
+	position:relative;
+	width: 280px;
+	height:40px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#page {
+  margin: 0 auto 0 auto; 
+  display: table; 
+  height: 420px;  
+  position: relative; 
+  overflow: hidden; 
+  background: #252F33;
+  width: 200px;
+  border-radius: 15px;
+}
+
+
+.title {
+	position:relative;
+	padding: 2px 6px 2px 6px;
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#DDDDDD;
+}
+
+.mainTitle {
+	text-align:center;
+	padding-left:0px;
+	padding-top:0px;
+	padding-bottom:2px;
+	color: #008080;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+}
+
+.mainContent {
+	width:auto;
+	position:relative;
+	padding-left:0px;
+	color:#F8FBFC;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:27px;
+	background: url(images/wood.jpg) no-repeat;
+}
+
+#bar {
+	position:relative;
+	width: 280px;
+	height:45px;
+	margin-left:0px;
+	margin-right:0px;
+	background: url(img/bar-bg.jpg) no-repeat;
+}
+
+#pageContent {
+	width: 280px;
+	height:auto;
+	padding-bottom:20px;
+}
+
+#footer {
+	width: 280px;
+	height:5px;
+	text-align:center;
+	font-size:9px;
+	color:#DDDDDD;
+	padding-top:2px;
+}
+
+#footer a {
+	font-size:10px;
+	color:#DDDDDD;
+}
+
+#main {
+	height: 260px;
+    width: 270px;
+    background-color: #888888;
+	padding-left: 5px;
+	padding-top: 5px;
+}

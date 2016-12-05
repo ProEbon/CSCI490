@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>CCU Schedule</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<style>
+#main { 
+	background: url("images/wood.jpg") no-repeat;
+	background-size: 100% 100%;
+	padding-right: 4px;
+	padding-bottom: 8%;
+	
+}
+textarea, select {
+	width : 170px;
+	margin: 0;
+
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+</style>
+
+<body>
+<div id="page"> 
+    <div id="header">
+		<table>
+			<tr>
+				<th><img src="images/cculogo.jpg" style="width: 142px; height: 40px; border-radius: 12px;"></th>
+				<th><div class="title"><i>Parking Finder</i></div></th>
+			</tr>
+		</table>
+    </div>
+    <div id="bar">
+        <ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="lots.html">Lots</a></li>
+			  <li><a href="log.html">Login</a></li>
+		</ul>
+    </div>
+    <div id="pageContent">
+    
+    <div class="mainTitle">Schedule</div>
+        
+        
+    <div class="mainContent">
+		<div id="main">
+		
+		<form style="box-sizing: border-box">
+			<fieldset style="padding-right: 2px">
+				<legend>Building & Time</legend>
+				
+					Select a building:
+			  		<form action="action_page.php">
+						<select name="bldg">
+							<option value="baxley">Baxley</option>
+							<option value="csc">Coastal Science Center</option>
+							<option value="kearns">Kearns</option>
+							<option value="library">Kimbel Library</option>
+							<option value="wall">Wall</option>
+						</select>
+						<br>
+					</form>
+					
+					Select a time:
+			  		<form action="action_page.php">
+						<select name="time">
+							<option value="800am">8:00 am</option>
+							<option value="900am">9:00 am</option>
+							<option value="1000am">10:00 am</option>
+							<option value="1100am">11:00 am</option>
+							<option value="1200pm">12:00 pm</option>
+							<option value="100pm">1:00 pm</option>
+							<option value="200pm">2:00 pm</option>
+							<option value="300pm">3:00 pm</option>
+						</select>
+						<br><br>
+						<input type="submit" value="Add to schedule">
+					</form>
+					
+					
+			</fieldset>
+			<fieldset>
+				<legend>Your schedule</legend>
+				Schedule goes here
+				<!-- Hide content boxes until user inputs -->
+				<!-- Need means to remove a selection as well-->
+				
+				
+				
+			</fieldset>
+		</form>
+		
+		</div>
+	</div>
+
+
+    </div>
+   
+</div>
+ <div id="footer">CSCI 490 - James, Ryan, Dakota, Ebon, Sean</div>
+        
+</body>
+</html>
